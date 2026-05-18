@@ -6,11 +6,8 @@ package org.example
 class Persona(private var nombre: String = "" , private var apellido: String = "", private var edad: Int = 0){
     override fun toString():String{
         return "(nombre = ${nombre}, apellido = ${apellido}, edad = ${edad})"
-        /* */ 
-        
     }
 }
-
 fun main() {
     var app: Persona
     app = Persona("Daniel", "Quinteros", 50)
