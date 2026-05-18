@@ -4,11 +4,6 @@
 package org.example
 
 class Persona(private var nombre: String = "" , private var apellido: String = "", private var edad: Int = 0){
-    fun inicializar(nombre: String, apellido: String, edad: Int) {
-            this.nombre=nombre
-            this.apellido=apellido
-            this.edad=edad
-    }
     override fun toString():String{
         return "(nombre = ${nombre}, apellido = ${apellido}, edad = ${edad})"
         /* */ 
@@ -18,8 +13,7 @@ class Persona(private var nombre: String = "" , private var apellido: String = "
 
 fun main() {
     var app: Persona
-    app = Persona()
-    app.inicializar("Daniel", "Quinteros", 50) 
+    app = Persona("Daniel", "Quinteros", 50)
     println("Mi persona es ${app.toString()}")
 }
 
